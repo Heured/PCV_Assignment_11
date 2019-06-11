@@ -8,7 +8,7 @@ graph cut test
   
 ## 过程
   原图：  
-  ![emmmm]()
+  ![emmmm](https://github.com/Heured/PCV_Assignment_11/blob/master/ImgToShow/empire.jpg)  
   源码：
 ```python
 # -*- coding: utf-8 -*-
@@ -57,4 +57,4 @@ est prob (2, 2184) range(0, 2)
 OK!!
 ```
   分割后:  
-  ![emmmm]()
+  ![emmmm](https://github.com/Heured/PCV_Assignment_11/blob/master/ImgToShow/output.jpg)
