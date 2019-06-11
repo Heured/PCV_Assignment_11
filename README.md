@@ -6,6 +6,28 @@ graph cut test
   Graph cuts是一种十分有用和流行的能量优化算法，在计算机视觉领域普遍应用于前背景分割（Image segmentation）、立体视觉（stereo vision）、抠图（Image matting）等。  
   具体相关资料参考[这里](https://blog.csdn.net/kyjl888/article/details/78253829)  
   
+## 示例
+  这里用python-graph工具包计算一幅较小的图的最大流/最小割的简单例子：  
+```python
+from pygraph.classes.digraph import digraph
+from pygraph.algorithms.minmax import maximum_flow
+
+gr = digraph()
+gr.add_nodes([0,1,2,3])
+gr.add_edge((0,1), wt=4)
+gr.add_edge((1,2), wt=3)
+gr.add_edge((2,3), wt=5)
+gr.add_edge((0,2), wt=3)
+gr.add_edge((1,3), wt=4)
+flows,cuts = maximum_flow(gr, 0, 3)
+print ('flow is:' , flows)
+print ('cut is:' , cuts)
+```
+  结果：  
+```
+flow is: {(0, 1): 4, (0, 2): 3, (1, 2): 0, (1, 3): 4, (2, 3): 3}
+cut is: {0: 0, 1: 1, 2: 1, 3: 1}
+```
 ## 过程
   原图：  
   ![emmmm](https://github.com/Heured/PCV_Assignment_11/blob/master/ImgToShow/empire.jpg)  
