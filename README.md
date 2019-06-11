@@ -57,4 +57,4 @@ est prob (2, 2184) range(0, 2)
 OK!!
 ```
   分割后:  
-  ![emmmm](https://github.com/Heured/PCV_Assignment_11/blob/master/ImgToShow/output.jpg)
+  ![emmmm](https://github.com/Heured/PCV_Assignment_11/blob/master/ImgToShow/output.PNG)
